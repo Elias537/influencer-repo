@@ -84,6 +84,20 @@
     margin-bottom: 16px;
   }
 
+  /* sponsor styles */
+
+  #sponsor-companies{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+  }
+
+  main .sponsors #sponsor-companies img{
+    margin-left: 48px;
+  }
+
+
   /* responsive media queries for mobile  */
 
   @media screen and (max-width:576px) {
@@ -91,12 +105,16 @@
     .nav-list {
         flex-direction: column;
     }
+    .navbar{
+        max-width: 100%;
+        padding: auto;
+    }
 
     .header-section{
         flex-direction: column-reverse;
     }
     .main-camera {
-        max-width: 100px;
+        max-width: 100%;
     }
     .header-content{
         text-align: center;
@@ -107,6 +125,10 @@
         background-repeat: no-repeat;
         
     }
-
+    #sponsor-companies{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     
   }
